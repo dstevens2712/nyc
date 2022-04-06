@@ -33,3 +33,6 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 And go to `http://localhost:8000`
+=======
+# nyc
+NYC Guide Project
