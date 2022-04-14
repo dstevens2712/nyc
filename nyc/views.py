@@ -23,7 +23,7 @@ class ActivityView(View):
        return render(
            request=request,
            template_name='activities.html',
-           context={'borough'/: borough, 'activity': activity, 
+           context={'borough': borough, 'activity': activity, 
                     'venues': boroughs[borough][activity].keys()
                    }
        ) # Defines the Class ActivityView, Requests the available activities from the boroughs.py file,
@@ -32,7 +32,7 @@ class ActivityView(View):
 
 class VenueView(View):
     def get(self, request, borough, activity, venue):
-        return=render(
+        return render(
             request=request,
             template_name='venue.html',
             context={'borough': borough,
