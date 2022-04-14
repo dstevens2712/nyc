@@ -1,0 +1,10 @@
+
+<h1> {{ borough | title }} - {{ activity | title }} </h1>
+<!-- Borough and activity title in venue -->
+<h1> {{ venue|title }} </h1>
+<!-- venue title to see venue -->
+<p>
+    {{ description }}
+</p>
+
+<a href="{% url 'city' %}">Return to Home</a>

@@ -1,0 +1,19 @@
+
+<h1>{{ activity | title }}</h1>
+<!-- Title for activity  -->
+
+<ul>
+    
+    {% for venue in venues %}  
+    <!-- For loop for the venue in venues   -->
+    <li>
+        <a href="{% url 'venue' borough activity venue %} "
+        >{{ venue|title }}</a
+        >
+    </li>
+    
+    {% endfor %}
+</ul>
+
+<a href="{% url 'city' %}">Return to Home</a>
+<!-- URL to return to the home page  -->
