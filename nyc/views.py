@@ -37,7 +37,7 @@ class VenueView(View):
             template_name='venue.html',
             context={'borough': borough,
                      'venue': venue,
-                     'venueDesc': boroughs[borough][activity][venue]
+                     'description': boroughs[borough][activity][venue]
                      ['description']
                     }
         )   # Defines the Class VenueView, Requests the venue information from the bouroughs.py file,
